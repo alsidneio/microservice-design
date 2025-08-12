@@ -22,7 +22,7 @@ def login():
     
     return token if not err else err
 
-@server.route("upload", methods=["POST"])
+@server.route("/upload", methods=["POST"])
 def upload(): 
     access, err = validate.token(request)
     
